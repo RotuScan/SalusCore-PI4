@@ -1,18 +1,15 @@
 import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header/Header'
-import Carousel from './components/Carousel/Carousel'
 import styles from './App.module.css'
 
-export default function App() {
-  // Criando 5 slides com as letras A, B, C, D, E e cores distintas para teste
-  const slides = [
-    { title: 'A', color: '#c82b2b' }, // Vermelho
-    { title: 'B', color: '#1d6bf3' }, // Azul
-    { title: 'C', color: '#2b2bc8' }, // Roxo
-    { title: 'D', color: '#2bc87a' }, // Verde
-    { title: 'E', color: '#c82ba4' }, // Rosa
-  ]
+import Home from './pages/Home/Home'
+import Sobre from './pages/Sobre/Sobre'
+import Mercado from './pages/Mercado/Mercado'
+import Projeto from './pages/Projeto/Projeto'
+import Equipe from './pages/Equipe/Equipe'
 
+export default function App() {
   return (
     <div className={styles.mainWrapper}>
       {/* Elementos decorativos de fundo */}
@@ -21,23 +18,18 @@ export default function App() {
       <div className={styles.bgSquare3}></div>
       <div className={styles.bgSquare4}></div>
 
-      <Header />
+      <BrowserRouter>
+        {/* O Header DENTRO do BrowserRouter para os Links funcionarem */}
+        <Header />
 
-      <main className={styles.hero}>
-        <div className={styles.heroContent}>
-          <span className={styles.tagline}>IDEIAS · PESSOAS · IMPACTO</span>
-          <h1 className={styles.title}>
-            Tecnologia que <span className={styles.blueText}>Simplifica o dia a dia</span>
-          </h1>
-          <p className={styles.description}>
-            Somos a SalusCore, uma equipe que transforma ideias e problemas reais em soluções digitais.
-          </p>
-        </div>
-
-        <div className={styles.carouselSection}>
-          <Carousel items={slides} />
-        </div>
-      </main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/mercado" element={<Mercado />} />
+          <Route path="/projeto" element={<Projeto />} />
+          <Route path="/equipe" element={<Equipe />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }

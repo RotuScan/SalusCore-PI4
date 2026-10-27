@@ -12,14 +12,13 @@ import Equipe from './pages/Equipe/Equipe'
 export default function App() {
   return (
     <div className={styles.mainWrapper}>
-      {/* Elementos decorativos de fundo */}
+      {/* Elementos decorativos de fundo globais */}
       <div className={styles.bgSquare1}></div>
       <div className={styles.bgSquare2}></div>
       <div className={styles.bgSquare3}></div>
       <div className={styles.bgSquare4}></div>
 
       <BrowserRouter>
-        {/* O Header DENTRO do BrowserRouter para os Links funcionarem */}
         <Header />
 
         <Routes>

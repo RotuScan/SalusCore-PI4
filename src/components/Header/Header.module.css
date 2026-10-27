@@ -1,42 +1,45 @@
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between; /* Empurra o logo para a esquerda e a nav para a direita */
+  width: 100%;
+  max-width: 1300px; /* Alinha com a largura máxima do seu conteúdo */
+  margin: 0 auto;
   padding: 1.5rem 3rem;
-  background-color: #0d0648;
-  color: #ffffff;
+  box-sizing: border-box;
 }
 
 .logoContainer {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.8rem;
 }
 
 .logoIcon {
-  width: 28px;
-  height: 28px;
-  fill: #1d6bf3;
+  width: 24px;
+  height: 24px;
+  color: #1d6bf3;
 }
 
 .logoText {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: #ffffff;
 }
 
 .nav {
   display: flex;
-  gap: 2rem;
+  gap: 2rem; /* Espaço entre os links */
 }
 
-.nav a {
-  color: #e0e0e0;
+.navLink {
+  color: #c0c5e0;
   text-decoration: none;
+  font-weight: 500;
   font-size: 0.95rem;
-  transition: color 0.2s;
+  transition: color 0.2s ease;
 }
 
-.nav a:hover {
-  color: #1d6bf3;
+.navLink:hover {
+  color: #ffffff;
 }

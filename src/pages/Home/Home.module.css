@@ -1,0 +1,55 @@
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 4rem 3rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  gap: 2rem;
+  z-index: 2;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 500px;
+}
+
+.tagline {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  color: #a0a5c0;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 3.2rem;
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.blueText {
+  color: #1d6bf3;
+  display: block;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #c0c5e0;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.carouselSection {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}

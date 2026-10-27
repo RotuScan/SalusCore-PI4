@@ -12,20 +12,13 @@ export default function Header() {
         </svg>
         <span className={styles.logoText}>SalusCore</span>
         <nav className={styles.nav}>
-        <Link to="/" className={styles.navLink}>Home</Link>
-        <Link to="/sobre" className={styles.navLink}>Sobre nós</Link>
-        <Link to="/mercado" className={styles.navLink}>Mercado</Link>
-        <Link to="/projeto" className={styles.navLink}>Projeto (RotuScan)</Link>
-        <Link to="/equipe" className={styles.navLink}>Equipe</Link>
+          <Link to="/" className={styles.navLink}>Home</Link>
+          <Link to="/sobre" className={styles.navLink}>Sobre nós</Link>
+          <Link to="/mercado" className={styles.navLink}>Mercado</Link>
+          <Link to="/projeto" className={styles.navLink}>Projeto (RotuScan)</Link>
+          <Link to="/equipe" className={styles.navLink}>Equipe</Link>
       </nav>
       </div>
-
-      <nav className={styles.nav}>
-        <a href="#sobre">Sobre Nós</a>
-        <a href="#mercado">Mercado</a>
-        <a href="#projeto">Projeto</a>
-        <a href="#equipe">Equipe</a>
-      </nav>
     </header>
   )
 }

@@ -9,6 +9,7 @@
   gap: 2rem;
   z-index: 2;
 }
+ /*position:relative e z-index:2 (para os quadradinhos ficarem atrás do texto)*/
 
 .heroContent {
   display: flex;

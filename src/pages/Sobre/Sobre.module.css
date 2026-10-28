@@ -1,0 +1,218 @@
+.container {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  background-color: #f8fafc;
+  color: #1e293b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.contentWrapper {
+  max-width: 1280px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* Badge 'Sobre nós' */
+.badge {
+  display: inline-block;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0.4rem 1.4rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+/* Título */
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.8rem;
+}
+
+.highlightBlue {
+  color: #2563eb;
+}
+
+/* Descrição */
+.description {
+  font-size: 1.1rem;
+  color: #475569;
+  line-height: 1.6;
+  max-width: 650px;
+  margin-bottom: 2rem;
+}
+
+.description strong {
+  color: #0f172a;
+}
+
+/* Fluxo (Cards + Setas) */
+.flowContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.stepCard {
+  background: #f1f5f9;
+  border-radius: 16px;
+  padding: 1rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 120px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.iconBox {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.redIcon {
+  background-color: #fee2e2;
+  color: #ef4444;
+}
+
+.purpleIcon {
+  background-color: #f3e8ff;
+  color: #a855f7;
+}
+
+.blueIcon {
+  background-color: #e0f2fe;
+  color: #0284c7;
+}
+
+.greenIcon {
+  background-color: #dcfce7;
+  color: #22c55e;
+}
+
+.stepTitle {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #0f172a;
+  margin-bottom: 0.2rem;
+}
+
+.stepSub {
+  font-size: 0.68rem;
+  color: #64748b;
+  line-height: 1.2;
+}
+
+.arrowIcon {
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
+/* Texto Secundário */
+.secondaryText {
+  font-size: 1rem;
+  color: #475569;
+  margin-bottom: 2rem;
+}
+
+.secondaryText strong {
+  color: #0f172a;
+}
+
+/* Pilares */
+.pillarsContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #ffffff;
+  padding: 1.2rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  max-width: 680px;
+}
+
+.pillarItem {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.pillarIcon {
+  width: 42px;
+  height: 42px;
+  background-color: #e0e7ff;
+  color: #4338ca;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.pillarItem h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.pillarItem p {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.pillarDivider {
+  width: 1px;
+  height: 35px;
+  background-color: #e2e8f0;
+}
+
+/* Coluna Imagem */
+.imageContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroImage {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .contentWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .pillarsContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pillarDivider {
+    width: 100%;
+    height: 1px;
+  }
+}

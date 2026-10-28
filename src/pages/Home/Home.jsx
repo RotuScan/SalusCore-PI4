@@ -1,14 +1,14 @@
 import React from 'react'
 import Carousel from '../../components/Carousel/Carousel'
-import styles from './Home.module.css' // Ou importe os estilos do App.module.css se preferir
+import styles from './Home.module.css'
 
 export default function Home() {
   const slides = [
-    { title: 'A', color: '#c82b2b' },
-    { title: 'B', color: '#1d6bf3' },
-    { title: 'C', color: '#2b2bc8' },
-    { title: 'D', color: '#2bc87a' },
-    { title: 'E', color: '#c82ba4' },
+    { title: 'A', color: '#c82b2b' }, // Vermelho
+    { title: 'B', color: '#1d6bf3' }, // Azul
+    { title: 'C', color: '#2b2bc8' }, // Roxo
+    { title: 'D', color: '#2bc87a' }, // Verde
+    { title: 'E', color: '#c82ba4' }, // Rosa
   ]
 
   return (

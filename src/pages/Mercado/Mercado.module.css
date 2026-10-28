@@ -1,0 +1,116 @@
+.container {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  background-color: #0c0f1d;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  position: relative;
+  z-index: 2;
+}
+
+.contentWrapper {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Cabeçalho */
+.headerSection {
+  max-width: 950px;
+}
+
+.badge {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #8c93b3;
+  padding: 0.3rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.2rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.highlightBlue {
+  color: #1d6bf3;
+}
+
+.description {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #c0c6e0;
+}
+
+.brandName {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Grid de Cards */
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  background: linear-gradient(145deg, rgba(20, 25, 50, 0.6) 0%, rgba(12, 15, 29, 0.8) 100%);
+  border: 1px solid rgba(29, 107, 243, 0.25);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(29, 107, 243, 0.6);
+}
+
+.iconContainer {
+  font-size: 1.8rem;
+  color: #1d6bf3;
+  margin-bottom: 0.5rem;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.cardText {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #a3aabf;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .cardsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .title {
+    font-size: 2.3rem;
+  }
+}

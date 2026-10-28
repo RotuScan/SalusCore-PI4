@@ -1,0 +1,152 @@
+.container {
+  width: 100%;
+  min-height: auto;
+  background-color: #0c0f1d;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  position: relative;
+  z-index: 2;
+}
+
+.contentWrapper {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+/* Cabeçalho */
+.headerSection {
+  max-width: 850px;
+}
+
+.badge {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #8c93b3;
+  padding: 0.3rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.2rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #ffffff;
+}
+
+.highlightBlue {
+  color: #1d6bf3;
+}
+
+/* Grade de Integrantes */
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.card {
+  background: rgba(16, 21, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(29, 107, 243, 0.4);
+}
+
+.avatarBox {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardBlue {
+  background: linear-gradient(135deg, #1d6bf3 0%, #1041a0 100%);
+}
+
+.cardRed {
+  background: linear-gradient(135deg, #c83d53 0%, #8a2234 100%);
+}
+
+.avatarIcon {
+  font-size: 4.5rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: flex-start;
+  padding: 0 0.2rem 0.5rem 0.2rem;
+}
+
+.memberName {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: left;
+  margin: 0;
+}
+
+.roleTag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.roleBlue {
+  background-color: rgba(29, 107, 243, 0.25);
+  color: #5895f7;
+  border: 1px solid rgba(29, 107, 243, 0.4);
+}
+
+.roleRed {
+  background-color: rgba(200, 61, 83, 0.25);
+  color: #f26d82;
+  border: 1px solid rgba(200, 61, 83, 0.4);
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .teamGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+  .title {
+    font-size: 2.2rem;
+  }
+}

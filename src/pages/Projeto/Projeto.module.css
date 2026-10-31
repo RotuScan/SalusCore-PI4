@@ -105,7 +105,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  width: 100%;
 }
 
 .phoneWrapper {
@@ -113,6 +113,14 @@
   max-width: 450px;
   display: flex;
   justify-content: center;
+}
+
+.phonesImage {
+  width: 100%;
+  max-width: 750px; /* Controla o tamanho máximo para preencher o espaço com elegância */
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.6)); /* Adiciona um sombreado elegante nos celulares */
 }
 
 /* Rodapé de Etapas da Página */

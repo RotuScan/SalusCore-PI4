@@ -80,9 +80,11 @@
   width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 14px;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .cardBlue {
@@ -149,4 +151,12 @@
   .title {
     font-size: 2.2rem;
   }
+
+  .memberPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a foto preencha o espaço sem distorcer */
+  border-radius: 12px; /* Mantém o arredondamento alinhado ao card */
+  display: block;
+}
 }
